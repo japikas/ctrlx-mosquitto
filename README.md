@@ -9,6 +9,6 @@ Mosquitto configuration is hard-coded inside the snap. Change your configuration
 
 **NB!** The example configuration in `mosquitto.conf` file is super permissive without any security for test use only. Apply your security settings prior deploying to production use.
 
-Derived from Canonical's snapcraft for mosquitto.
+Derived from [Eclipse Mosquitto](https://github.com/eclipse/mosquitto) github.
 
 For any other information, please take a look at [Eclipse Mosquitto](https://mosquitto.org/) web site.
