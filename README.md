@@ -7,6 +7,6 @@ Build tested in Ubuntu 22.04 at ARM host with ctrlX SDK v2.2. Snap tested in ctr
 
 Mosquitto configuration is hard-coded inside the snap. Change your configuration in `mosquitto.conf` prior building. Configuration example is available in `snap/local/default_config.conf`.
 
-**NB!** The default configuration in `mosquitto.conf` file is super permissive without any security for test use only. Apply your security settings prior deploying to production use.
+**NB!** The example configuration in `mosquitto.conf` file is super permissive without any security for test use only. Apply your security settings prior deploying to production use.
 
 Derived from Canonical's snapcraft for mosquitto.
