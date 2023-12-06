@@ -1,7 +1,7 @@
 # ctrlx-mosquitto
 **Mosquitto MQTT broker for ctrlX**
 
-Snapcraft recipe for building Mosquitto MQTT broker for [ctrlX AUTOMATION](https://apps.boschrexroth.com/microsites/ctrlx-automation/en/). Currently (2023-12) builds for Mosquitto 2.0.18.
+Snapcraft recipe for building Mosquitto MQTT broker (2.0.18) for [ctrlX AUTOMATION](https://apps.boschrexroth.com/microsites/ctrlx-automation/en/).
 
 This is a message broker that supports version 5.0, 3.1.1, and 3.1 of the MQTT protocol. MQTT provides a method of carrying out messaging using a publish/subscribe model. It is lightweight, both in terms of bandwidth usage and ease of implementation. This makes it particularly useful at the edge of the network where a sensor or other simple device may be implemented using an arduino forexample.
 
