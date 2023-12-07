@@ -13,7 +13,7 @@ Configuration file is stored in the ctrlX database for App Persistent Configurat
 
 WebDav can be mounted as remote file system, or accessed with separate applications like WinSCP.
 
-Default configuration allows access from local host only. For test use, external access can be enabled like this:
+Default configuration allows access from local host only. For test and development use, external access can be enabled like this:
 
 > listener 1883 0.0.0.0
 
