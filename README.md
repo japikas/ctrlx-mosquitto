@@ -17,7 +17,7 @@ WebDav can be mounted as remote file system for easy of access, or accessed with
 > Instructions how to mount WebDav resource as filesystem in [Linux](https://espace.cern.ch/winservices-help/DFS/WebDAV/Pages/UsingDavfsOnOlderLinux.aspx), [Mac](https://espace.cern.ch/winservices-help/DFS/WebDAV/Pages/UsingWebDAVFromMacOSX.aspx), [Windows](https://espace.cern.ch/winservices-help/DFS/WebDAV/Pages/UsingWebDAVFromWindows.aspx).
 
 > [!IMPORTANT]
-> Mosquitto does not reload changed configurations automatically, but only when starting. Thus, configuration changes must be applied via application Disable - Enable cycle.
+> Mosquitto does not reload configurations changes automatically, but only when starting. Thus, changes must be applied by application Disable - Enable cycle.
 
 Default configuration allows access from local host only. For test and development use, external access can be enabled like this:
 
