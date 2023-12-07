@@ -1,5 +1,5 @@
 # ctrlx-mosquitto
-**Mosquitto MQTT broker for ctrlX**
+### Mosquitto MQTT broker for ctrlX
 
 Snapcraft recipe for building Mosquitto MQTT broker for [ctrlX AUTOMATION](https://apps.boschrexroth.com/microsites/ctrlx-automation/en/).
 
