@@ -9,7 +9,7 @@ Mosquitto 2.0.18 build tested in Ubuntu 22.04 at ARM host with ctrlX SDK v2.2. S
 
 Configuration file is stored in the ctrlX database for App Persistent Configuration, provided by the Solutions App. The file can be access in Web Dashboard: Home -> Manage app data -> Mosquitto MQTT. There is no editor available in the web UI, but configuration files can be accessed with WebDav.
 
-https://device_address/solutions/webdav/appdata/mosquitto/mosquitto.conf
+> https://device_address/solutions/webdav/appdata/mosquitto/mosquitto.conf
 
 WebDav can be mounted as remote file system, or accessed with separate applications like WinSCP.
 
