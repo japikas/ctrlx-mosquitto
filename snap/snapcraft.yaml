@@ -123,7 +123,8 @@ parts:
       source: ./configs
       organize:
         'package-assets/*': package-assets/${SNAPCRAFT_PROJECT_NAME}/
-
+      prime:
+        - default_config.conf
 slots: 
   package-assets:
       interface: content
