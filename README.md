@@ -22,7 +22,7 @@ Default configuration allows access from local host only. For test and developme
 
 `allow_anonymous true`
 
-> [!CAUTION]
+> [!WARNING]
 > This example configuration provides no security and should not be applied in production use.
 
 
