@@ -15,7 +15,8 @@ T.B.D.
 
 #### Snapcraft
 
-The proejct builds as snap package with [snapcraft](https://ubuntu.com/core/docs/snaps-in-ubuntu-core) tool in [ctrlX WORKS](https://apps.boschrexroth.com/microsites/ctrlx-automation/en/portfolio/ctrlx-works/) development environment, or in Ubuntu host with [ctrlX SDK](https://github.com/boschrexroth/ctrlx-automation-sdk) installed. Use of virtual machine is recommended as snapcraft may mess up with the host system. The snap is build as follows:
+[ctrlX OS](https://apps.boschrexroth.com/microsites/ctrlx-automation/en/portfolio/ctrlx-os/) is build a top of [Ubuntu Core](https://ubuntu.com/core) and uses snap packages for distribution of applications.
+Snaps are build wwith [snapcraft](https://ubuntu.com/core/docs/snaps-in-ubuntu-core) tool in [ctrlX WORKS](https://apps.boschrexroth.com/microsites/ctrlx-automation/en/portfolio/ctrlx-works/) development environment, or in Ubuntu host with [ctrlX SDK](https://github.com/boschrexroth/ctrlx-automation-sdk) installed. Use of virtual machine is recommended as snapcraft may mess up with the host system. The snap is build as follows:
 
 `snapcraft --destructive-mode`
 
