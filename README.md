@@ -21,6 +21,7 @@ Default configuration allows access from local host only. For test and developme
 
 **NB!** This example configuration provides no security and should not be applied in production use.
 
-Project derived from Eclipse Mosquitto github [https://github.com/eclipse/mosquitto](https://github.com/eclipse/mosquitto)
+
+The project is derived from Eclipse Mosquitto github [https://github.com/eclipse/mosquitto](https://github.com/eclipse/mosquitto)
 
 For any other information, please take a look at Eclipse Mosquitto web site [https://mosquitto.org/](https://mosquitto.org/)
