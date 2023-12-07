@@ -50,17 +50,7 @@ parts:
     source: snap/local/
     prime:      
       - launcher.sh
-      
-  config:
-    after:
-      - script
-    plugin: dump
-    source: .
-    prime:
-      - mosquitto.conf
-    override-prime: |
-      snapcraftctl prime    
-      mv mosquitto.conf default_config.conf
+      - default_config.conf
 
   mosquitto:
     after:
@@ -128,4 +118,22 @@ parts:
       - usr/local/lib/libcjson.a
     prime: [-*]
 
+  configs:
+      plugin: dump
+      source: ./configs
+      organize:
+        'package-assets/*': package-assets/${SNAPCRAFT_PROJECT_NAME}/
 
+slots: 
+  package-assets:
+      interface: content
+      content: package-assets
+      source:
+        read:
+        - $SNAP/package-assets/${SNAPCRAFT_PROJECT_NAME}
+
+plugs:
+  active-solution:
+    interface: content
+    content: solutions
+    target: $SNAP_DATA/solutions

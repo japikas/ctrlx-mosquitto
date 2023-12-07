@@ -1,0 +1,17 @@
+{
+     "$schema": "https://json-schema.boschrexroth.com/ctrlx-automation/ctrlx-core/apps/package-manifest/package-manifest.v1.2.schema.json",
+    "id": "mosquitto",
+    "version": "1.0.0",
+    "configuration": {
+        "appDirectories": [
+	    {
+		"name": "mosquitto",
+		"description": "Mosquitto MQTT",
+		"icon": "bosch-ic-directory",
+		"scopes": [],
+		"copyOnLoad": true,
+		"writeprotected": false
+	    }
+	]
+    }
+}  

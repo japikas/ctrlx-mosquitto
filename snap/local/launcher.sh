@@ -1,41 +1,26 @@
 #!/bin/sh
-# Wrapper to check for custom config in $SNAP_USER_COMMON or $SNAP_COMMON and
-# use it otherwise fall back to the included basic config which will at least
-# allow mosquitto to run and do something.
-# This script will also copy the full example config in to SNAP_USER_COMMON or
-# SNAP_COMMON so that people can refer to it.
-#
-# The decision about whether to use SNAP_USER_COMMON or SNAP_COMMON is taken
-# based on the user that runs the command. If the user is root, it is assumed
-# that mosquitto is being run as a system daemon, and SNAP_COMMON will be used.
-# If a non-root user runs the command, then SNAP_USER_COMMON will be used.
+# Launch script for mosquitto
 
-case "$SNAP_USER_COMMON" in
-	*/root/snap/mosquitto/common*) COMMON=$SNAP_COMMON ;;
-	*)                             COMMON=$SNAP_USER_COMMON ;;
-esac
+# Wait for persistent storage to be available
+while ! snapctl is-connected active-solution
+do
+    echo "Persistent storage not ready yet. Sleep"
+    sleep 5
+done
 
-CONFIG_FILE="$SNAP/default_config.conf"
-CUSTOM_CONFIG="$COMMON/mosquitto.conf"
+CONFIG_PATH=$SNAP_DATA/solutions/activeConfiguration/mosquitto
+CONFIG_FILE=$CONFIG_PATH/mosquitto.conf
 
-
-# Copy the example config if it doesn't exist
-if [ ! -e "$COMMON/mosquitto_example.conf" ]
+# Copy default config, if doesn't exists
+if [ ! -e $CONFIG_FILE ]
 then
-  echo "Copying example config to $COMMON/mosquitto_example.conf"
-  echo "You can create a custom config by creating a file called $CUSTOM_CONFIG"
-  cp $SNAP/mosquitto.conf $COMMON/mosquitto_example.conf
-fi
-
-
-# Does the custom config exist?  If so use it.
-if [ -e "$CUSTOM_CONFIG" ]
-then
-  echo "Found config in $CUSTOM_CONFIG"
-  CONFIG_FILE=$CUSTOM_CONFIG
+    echo "Configuration file does not exists, copy default to $CONFIG_FILE"
+    mkdir $CONFIG_PATH
+    cp $SNAP/default_config.conf $CONFIG_FILE
 else
-  echo "Using default config from $CONFIG_FILE"
+    echo "Use existing configuration file $CONFIG_FILE"
 fi
 
-# Launch the snap
+# Launch the broker
+
 $SNAP/usr/sbin/mosquitto -c $CONFIG_FILE $@
