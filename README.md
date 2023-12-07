@@ -15,8 +15,8 @@ WebDav can be mounted as remote file system for easy of access, or accessed with
 
 Default configuration allows access from local host only. For test and development use, external access can be enabled like this:
 
-`listener 1883 0.0.0.0
-allow_anonymous true`
+`listener 1883 0.0.0.0`
+`allow_anonymous true`
 
 **NB!** This example configuration provides no security and should not be applied in production use.
 
