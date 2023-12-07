@@ -7,6 +7,8 @@ This is a message broker that supports version 5.0, 3.1.1, and 3.1 of the MQTT p
 
 Mosquitto 2.0.18 compilation tested in Ubuntu 22.04 at ARM host with ctrlX SDK v2.2. Snap tested in ctrlX CORE X3 with core22. More information about ctrlX SDK in github [https://github.com/boschrexroth/ctrlx-automation-sdk](https://github.com/boschrexroth/ctrlx-automation-sdk)
 
+### Configuration
+
 The configuration file is stored in the ctrlX database for App Persistent Configuration, provided by the Rexroth Solutions App. The file can be access in Web Dashboard: Home -> Manage app data -> Mosquitto MQTT. There is no editor available in the web UI, but configuration files can be accessed and edited with WebDav.
 
 `https://<device_address>/solutions/webdav/appdata/mosquitto/`
