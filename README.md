@@ -11,7 +11,7 @@ Configuration file is stored in the ctrlX database for App Persistent Configurat
 
 > https://device_address/solutions/webdav/appdata/mosquitto/mosquitto.conf
 
-WebDav can be mounted as remote file system, or accessed with separate applications like WinSCP, as explained [here](https://boschrexroth.github.io/ctrlx-automation-sdk/persistdata.html#accessing-configuration-files-per-webdav). Mac users can just mount the WebDav end-point in Finder by Go->[Connect to Server..](https://espace.cern.ch/winservices-help/DFS/WebDAV/Pages/UsingWebDAVFromMacOSX.aspx)
+WebDav can be mounted as remote file system, or accessed with separate applications like WinSCP, as explained [here](https://boschrexroth.github.io/ctrlx-automation-sdk/persistdata.html#accessing-configuration-files-per-webdav). Mac users can simply mount the WebDav end-point in Finder by Go->[Connect to Server..](https://espace.cern.ch/winservices-help/DFS/WebDAV/Pages/UsingWebDAVFromMacOSX.aspx)
 
 Default configuration allows access from local host only. For test and development use, external access can be enabled like this:
 
