@@ -43,6 +43,7 @@ Default configuration allows access from local host only. For test and developme
 > [!WARNING]
 > This example configuration provides no security and should not be applied in production use.
 
+**TODO:** Implement mechanism to reload configuration when file modified.
 
 The project is derived from Eclipse Mosquitto github [https://github.com/eclipse/mosquitto](https://github.com/eclipse/mosquitto)
 
