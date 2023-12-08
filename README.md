@@ -22,7 +22,7 @@ Snaps are build with [snapcraft](https://ubuntu.com/core/docs/snaps-in-ubuntu-co
 
 ### Configuration
 
-After installing the snap package in ctrlX target, the configuration file appears in the App Persistent Configuration database, provided by the Rexroth Solutions App. The file can be accessed in Web Dashboard: Home -> Manage app data -> Mosquitto MQTT. There is no editor available in the web UI, but configuration files can be accessed and edited with WebDav.
+After installing the snap package in ctrlX target, the configuration file appears in the App Persistent Configuration database, provided by the Rexroth Solutions App. The file can be accessed in Web Dashboard: Home -> Manage app data -> Mosquitto MQTT. There is no editor available in the web UI, but configuration files can be accessed and edited with WebDav in given url:
 
 `https://<device_address>/solutions/webdav/appdata/mosquitto/`
 
