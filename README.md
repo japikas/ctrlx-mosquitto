@@ -26,7 +26,7 @@ After installing the snap package in ctrlX target, the configuration file appear
 
 `https://<device_address>/solutions/webdav/appdata/mosquitto/`
 
-WebDav can be mounted as remote file system for easy of access, or accessed with separate applications like WinSCP, as explained [here](https://boschrexroth.github.io/ctrlx-automation-sdk/persistdata.html#accessing-configuration-files-per-webdav). 
+WebDav can be mounted as remote file system for easy of access, or accessed with separate applications like WinSCP, as explained [here](https://boschrexroth.github.io/ctrlx-automation-sdk/persistdata.html#accessing-configuration-files-per-webdav). With web browser, the WebDav resource is accessible in read-only mode.
 
 > [!TIP]
 > Instructions how to mount WebDav resource as filesystem in [Linux](https://espace.cern.ch/winservices-help/DFS/WebDAV/Pages/UsingDavfsOnOlderLinux.aspx), [Mac](https://espace.cern.ch/winservices-help/DFS/WebDAV/Pages/UsingWebDAVFromMacOSX.aspx), [Windows](https://espace.cern.ch/winservices-help/DFS/WebDAV/Pages/UsingWebDAVFromWindows.aspx).
