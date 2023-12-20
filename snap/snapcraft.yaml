@@ -67,6 +67,7 @@ parts:
       - gcc
       - g++
       - libwebsockets-dev
+      - libcjson-dev
     stage-packages:
       - libcjson1
       - libev4
