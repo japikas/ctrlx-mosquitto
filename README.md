@@ -12,11 +12,8 @@ Mosquitto 2.0.18 compilation tested in Ubuntu 22.04 at ARM host with ctrlX SDK v
 #### Debendencies
 
 - ctrlX SDK
-- libcjson
 
 Install [ctrlX SDK](https://boschrexroth.github.io/ctrlx-automation-sdk/overview.html) in ctrlX WORKS or Ubuntu host.
-
-`sudo apt install libcjson-dev`
 
 #### Snapcraft
 
